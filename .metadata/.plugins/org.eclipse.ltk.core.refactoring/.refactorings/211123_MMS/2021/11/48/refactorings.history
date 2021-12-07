@@ -1,0 +1,4 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<session version="1.0">
+<refactoring comment="Rename type &apos;vo.MemverUI&apos; to &apos;SearchData&apos;&#x0D;&#x0A;- Original project: &apos;211123_MMS&apos;&#x0D;&#x0A;- Original element: &apos;vo.MemverUI&apos;&#x0D;&#x0A;- Renamed element: &apos;vo.SearchData&apos;&#x0D;&#x0A;- Update references to refactored element&#x0D;&#x0A;- Update textual occurrences in comments and strings" description="Rename type &apos;MemverUI&apos;" flags="589830" id="org.eclipse.jdt.ui.rename.type" input="/src&lt;vo{MemverUI.java[MemverUI" matchStrategy="1" name="SearchData" qualified="false" references="true" similarDeclarations="false" stamp="1637643563187" textual="false" version="1.0"/>
+</session>

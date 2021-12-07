@@ -1,0 +1,3 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<session version="1.0">&#x0A;<refactoring comment="Rename resource &apos;211123&apos; to &apos;211123_MembershipManagement&apos;" description="Rename resource &apos;211123&apos;" flags="7" id="org.eclipse.ltk.core.refactoring.rename.resource" input="/211123" name="211123_MembershipManagement" stamp="1637627479115" updateReferences="true"/>&#x0A;<refactoring comment="Rename resource &apos;211123_MembershipManagement&apos; to &apos;211123_MMS&apos;" description="Rename resource &apos;211123_MembershipManagement&apos;" flags="7" id="org.eclipse.ltk.core.refactoring.rename.resource" input="/211123_MembershipManagement" name="211123_MMS" stamp="1637628089798" updateReferences="true"/>
+</session>

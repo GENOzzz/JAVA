@@ -1,0 +1,21 @@
+서블릿
+JSP
+spring
+까지 하면 마무리
+
+메소드 excute >>> 
+┌─────────prjectMMS─────────--─┐
+│ ┌──────────utill───────────┐│
+│ │ ui >>> controller >>> action >>> svc >>> vo ││
+│ └─────────----────────────┘│
+└─────────────────────────┘
+
+각 패키지안에서 어떻게 연결되는지를 염두에 두면서 작업할것.
+
+toString() 오버라이딩
+System.out.print("객체");[객체를 출력하고자 할때.]
+할때 원하는대로 출력하기위해 오버라이딩 함.
+
+
+svc => MemberListService Line 14
+util => ConsoleUtil line 130

@@ -1,0 +1,40 @@
+package action;
+
+import java.util.Scanner;
+import svc.MemberSearchService;
+import util.ConsoleUtil;
+import vo.Member;
+import vo.SearchData;
+
+public class MemberSearchAction implements Action{
+	boolean reset=false;
+	@Override
+	public void execute(Scanner scan) throws Exception{
+		ConsoleUtil consoleUtil=new ConsoleUtil();
+		SearchData searchData=consoleUtil.getSearchData(scan);
+		Member member=null;
+		Member[]memberArray= new Member[0];
+		MemberSearchService memberSearchService = new MemberSearchService();
+		while(!reset) {
+			if(searchData.getSearchCondition().equals("아이디")||searchData.getSearchCondition().equals("1")) {
+				member = memberSearchService.searchMemberById(searchData.getSearchValue());
+				consoleUtil.printSearchMember(member);
+			}else if(searchData.getSearchCondition().equals("닉네임")||searchData.getSearchCondition().equals("3")) {
+				member=memberSearchService.searchMemberByNick(searchData.getSearchValue());
+				consoleUtil.printSearchMemberArrayN(member);
+			}else if(searchData.getSearchCondition().equals("이름")||searchData.getSearchCondition().equals("2")) {
+				memberArray = memberSearchService.searchMemberByName(searchData.getSearchValue());
+				consoleUtil.printSearchMemberArray(memberArray);
+			}else if(searchData.getSearchCondition().equals("취미")||searchData.getSearchCondition().equals("4")) {
+				memberArray=memberSearchService.searchMemberByHobby(searchData.getSearchValue());
+				consoleUtil.printSearchMemberArrayH(memberArray);
+			}
+			reset=true;
+			if(member==null&&memberArray.length==0) {
+				reset=false;
+				System.out.println("재입력 부탁드립니다.");
+				searchData.setSearchValue(scan.next());
+			}
+		}
+	}
+}
