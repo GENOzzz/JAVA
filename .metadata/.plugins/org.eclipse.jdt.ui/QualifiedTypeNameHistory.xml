@@ -8,5 +8,9 @@
 <fullyQualifiedTypeName name="java.util.InputMismatchException"/>
 <fullyQualifiedTypeName name="vo.SearchData"/>
 <fullyQualifiedTypeName name="action.MemberSearchAction"/>
+<fullyQualifiedTypeName name="java.util.StringTokenizer"/>
+<fullyQualifiedTypeName name="RCP_man.human"/>
+<fullyQualifiedTypeName name="RCP_main.com"/>
+<fullyQualifiedTypeName name="RCP_main.versus"/>
 <fullyQualifiedTypeName name="java.util.Scanner"/>
 </qualifiedTypeNameHistroy>
