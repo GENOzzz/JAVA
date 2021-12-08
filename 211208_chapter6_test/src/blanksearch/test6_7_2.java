@@ -12,7 +12,7 @@ public class test6_7_2 {
 			String [] check=st.split(" ");
 			System.out.println(java.util.Arrays.toString(check));
 			int n=check.length;
-			if(st.equals("그만")) a++;//equals로 비교하는 순간 Token하나 잃어서 위에서 미리 세줘야함.
+			if(st.equals("그만")) a++;
 			else {
 				System.out.println("어절의 개수는 : "+n+" 개입니다.");
 			}

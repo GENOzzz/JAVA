@@ -12,5 +12,7 @@
 <fullyQualifiedTypeName name="RCP_man.human"/>
 <fullyQualifiedTypeName name="RCP_main.com"/>
 <fullyQualifiedTypeName name="RCP_main.versus"/>
+<fullyQualifiedTypeName name="gamblehuman.gamehuman"/>
+<fullyQualifiedTypeName name="RSP_1.check"/>
 <fullyQualifiedTypeName name="java.util.Scanner"/>
 </qualifiedTypeNameHistroy>

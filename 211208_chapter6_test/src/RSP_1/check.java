@@ -25,7 +25,4 @@ public class check {
 			}
 			return cnum;
 		}
-		public static void main(String[] args) {//함수가 작동하는지 확인하기위한 메인문
-
-		}
 }

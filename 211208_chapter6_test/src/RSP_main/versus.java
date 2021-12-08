@@ -1,6 +1,6 @@
 package RSP_main;
 
-public class versus {
+public class versus {//human과 com의 hand를 비교하여 결과를 내는 함수
 	private human human = new human();
 	private com com=new com();
 	public void versuss(human human,com com) {
