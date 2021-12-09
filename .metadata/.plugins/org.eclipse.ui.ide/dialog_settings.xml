@@ -12,6 +12,8 @@
 		<item key="SmartImportRootWizardPage.STORE_NESTED_PROJECTS" value="true"/>
 		<item key="SmartImportRootWizardPage.STORE_CONFIGURE_NATURES" value="true"/>
 		<list key="org.eclipse.ui.internal.wizards.datatransfer.SmartImportRootWizardPage.knownSources">
+			<item value="E:\school\geno\JAVA\211207_chapter6_test"/>
+			<item value="D:\geno\java\211207_chapter6_test"/>
 			<item value="D:\school\geno\JAVA"/>
 			<item value="D:\school\geno\JAVA\211129_chapter6"/>
 		</list>
