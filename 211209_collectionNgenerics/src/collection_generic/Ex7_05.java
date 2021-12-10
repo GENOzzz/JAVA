@@ -1,12 +1,12 @@
-package vector;
+package collection_generic;
 
 import java.util.*;
 
-public class Ex7_5 {
+public class Ex7_05 {
 	public static void main(String[] args) {
 		HashMap<String,String> dic=new HashMap<String,String>();//해시맵 생성
-		//var dic=new HashMap<String,String>();로 간략히 써도됨.
-		
+		//var dicc=new HashMap<String,String>();로 간략히 써도됨.자바 일정버전 이상
+		Object obj;
 		//3개의 (key,value)쌍을 dic에 저장
 		dic.put("baby", "아기");//"baby는 key 아기는 value
 		dic.put("love","사랑");
@@ -17,7 +17,7 @@ public class Ex7_5 {
 		while(true) {
 			System.out.print("찾고 싶은 단어는?>>>");
 			String eng=sc.next();
-			if(eng.contentEquals("exit")) {
+			if(eng.equals("exit")) {
 				System.out.println("종료합니다...");
 				break;
 			}

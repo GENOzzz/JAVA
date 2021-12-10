@@ -1,4 +1,4 @@
-package vector;
+package collection_generic;
 import java.util.Vector;
 
 class Point{
@@ -12,7 +12,7 @@ class Point{
 	}
 }
 
-public class Ex7_2 {
+public class Ex7_02 {
 	public static void main(String[] args) {
 		Vector<Point> v = new Vector<Point>();//Point 객체를 요소로 다루는 벡터 생성
 		

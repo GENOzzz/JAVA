@@ -1,4 +1,4 @@
-package vector;
+package collection_generic;
 
 import java.util.Vector;
 

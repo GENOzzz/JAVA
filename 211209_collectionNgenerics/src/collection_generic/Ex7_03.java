@@ -1,8 +1,8 @@
-package vector;
+package collection_generic;
 
 import java.util.*;
 
-public class Ex7_3 {
+public class Ex7_03 {
 	public static void main(String[] args) {
 		//문자열만 삽입 가능한 ArrayList 생성
 		ArrayList<String> a=new ArrayList<String>();

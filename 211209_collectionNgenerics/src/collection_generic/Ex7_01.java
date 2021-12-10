@@ -1,8 +1,8 @@
-package vector;
+package collection_generic;
 
 import java.util.Vector;
 
-public class Ex7_1 {
+public class Ex7_01 {
 
 	public static void main(String[] args) {
 		Vector<Integer> v =new Vector<Integer>();//정수만 다루는 벡터 생성

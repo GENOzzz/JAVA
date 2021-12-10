@@ -1,8 +1,8 @@
-package vector;
+package collection_generic;
 
 import java.util.*;
 
-public class Ex7_4 {
+public class Ex7_04 {
 	
 	public static void main(String[] args) {
 		//정수 값만 다루는 제네릭 벡터 생성
