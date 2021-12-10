@@ -32,14 +32,12 @@ public class test6_11 {
 			System.out.println(java.util.Arrays.toString(nw));
 			if(nw[0].equals("")||nw.length>2) System.out.println("잘못된 명령어 입니다!");
 			else {
+				System.out.println(java.util.Arrays.toString(old));
 				for(int i=0;i<old.length;i++) {
 					if(old[i].equals(nw[0])) {
+						int ch=sb.indexOf(old[i]); //StringBuffer에 입력받은 문자가 있는지 위치를 반환해주는 함수. 없으면 -1출력.
+						sb.replace(ch,ch+old[i].length(),nw[1]);
 						old[i]=nw[1];
-						for(int k=0;k<old.length;k++) {
-							sb.append(old[k]+" ");
-						}
-						System.out.println("```````````````````");
-						sb=sb.delete(0, sbl);
 						break;
 					}else if(i==old.length-1) {
 						System.out.println("찾을 수 없습니다.");
