@@ -26,7 +26,7 @@ class GStack<T>{//GStack선언,제네릭 타입T
 	//제네릭 클래스 안에서 제네릭 메소드 선언 불가?
 }
 
-public class Ex7_09 {
+public class Ex7_09_10 {
 	
 	public static <T> GStack<T> revers(GStack<T> a){
 		GStack<T> s=new GStack<T>();//입력받은 GStack<T> a를 반대로 저장할 목적
