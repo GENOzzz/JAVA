@@ -27,4 +27,10 @@ public class Student {
 		this.id=id;
 		this.grade=grade;
 	}
+	public String toString() {
+		return "학생 이름 : "+name+"\n"+
+				"학과 : "+department+"\n"+
+				"학번 : "+id+"\n"+
+				"학점평균 : "+grade;
+	}
 }

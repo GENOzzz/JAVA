@@ -38,10 +38,11 @@ public class test7_5_1 {
 		
 		for(int i =0;i<students.size();i++) {
 			System.out.println("========================");
-			System.out.println("이름 : "+students.get(i).getName());
-			System.out.println("학과 : "+students.get(i).getDepartment());
-			System.out.println("학번 : "+students.get(i).getId());
-			System.out.println("학점평균 : "+students.get(i).getGrade());
+			System.out.println(students.get(i));
+//			System.out.println("이름 : "+students.get(i).getName()); <<toString()오버라이딩 하면 안써도 됨...
+//			System.out.println("학과 : "+students.get(i).getDepartment());
+//			System.out.println("학번 : "+students.get(i).getId());
+//			System.out.println("학점평균 : "+students.get(i).getGrade());
 			
 		}
 	}

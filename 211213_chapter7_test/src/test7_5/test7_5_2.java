@@ -1,4 +1,5 @@
 package test7_5;
+import java.io.FileReader;
 import java.util.HashMap;
 import java.util.Iterator;
 import java.util.Scanner;
@@ -88,7 +89,6 @@ public class test7_5_2 {
 		t.joinStudent(num);
 		t.allStudents(t.students);
 		t.searchStudent();
-		
 	}
 
 }
