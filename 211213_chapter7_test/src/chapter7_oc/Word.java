@@ -1,5 +1,4 @@
 package chapter7_oc;
-import java.util.*;
 
 public class Word {
 	private String kor;

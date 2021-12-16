@@ -8,6 +8,7 @@
 		<item key="incremental" value="false"/>
 		<item key="isRegEx" value="false"/>
 		<list key="findhistory">
+			<item value="System.out.println(&quot;customer생성&quot;);"/>
 			<item value="getNewMember"/>
 			<item value="getId"/>
 			<item value="getId(String msgKind,java.util.Scanner scan)"/>

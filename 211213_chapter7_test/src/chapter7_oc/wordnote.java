@@ -3,7 +3,8 @@ package chapter7_oc;
 import java.util.ArrayList;
 import java.util.Scanner;
 import java.util.Vector;
-import test7_1.check;
+
+import test7_01.check;
 
 
 public class wordnote {
@@ -42,7 +43,7 @@ public class wordnote {
 		int a = 0,b=0,c=0;
 		
 		for(int i=0;i<3;i++) {
-			int r=(int)(Math.random()*22);
+			int r=(int)(Math.random()*wn.size());
 			if(r==e) {
 				i--;
 			}else {
@@ -87,23 +88,47 @@ public class wordnote {
 	}
 	
 	public void searchEng() {
-		boolean ending=true;
-		while(ending) {
-			int e=(int)(Math.random()*22);
-			System.out.println(wn.get(e).getEng()+"? ");
-			if(e==-1) {
-				ending=false;
-				break;
-			}
-			ending=searchKor(e);
-			
-		}
 		
+		while(true) {
+			System.out.print("단어시험(1) 단어삽입(2) 종료(3) >>");
+			int choice=ck.checkk(sc.next());
+			switch(choice) {
+			case 1:
+				boolean ending=true;
+				while(ending) {
+					int e=(int)(Math.random()*wn.size());
+					System.out.println(wn.get(e).getEng()+"? ");
+					ending=searchKor(e);
+				}
+				break;
+			case 2:
+				System.out.println("현재"+wn.size()+"개의 영어단어가 있습니다.");
+				System.out.print("새로운 단어를 입력 하세요 (\"그만\"은 입력을 종료합니다)>>");
+				String eng=sc.next();
+				if(eng.equals("그만")) {
+					System.out.println("입력을 종료합니다");
+					break;
+				}
+				if(wn.stream().anyMatch(english -> english.getEng().equals(eng))) {
+					System.out.println("이미 존재하는 영어입니다.");
+					break;
+				}
+				String kor=sc.next();
+				Word newword=new Word(eng,kor);
+				wn.add(newword);
+				break;
+			case 3:
+				System.out.println("프로그램을 종료합니다.");
+				return;
+			default:
+				System.out.println("보기의 숫자만 입력해 주십시오.");
+			}
+		}
 	}
 	
 	public void run() {
 		System.out.println("\"명품영어\""+"단어 테스트를 시작합니다. -1을 입력하면 종료합니다.");
-		System.out.println("현재 22개의 단어가 들어있습니다.");
+		System.out.println("현재 "+wn.size()+"개의 단어가 들어있습니다.");
 		searchEng();
 	}
 }
