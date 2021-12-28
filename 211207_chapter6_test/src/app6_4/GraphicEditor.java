@@ -9,5 +9,4 @@ public class GraphicEditor {
 		Shape shape = new Circle();
 		shape.draw();
 	}
-
 }
